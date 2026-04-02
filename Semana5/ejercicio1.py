@@ -19,5 +19,5 @@ def contar_recursivo(n):
     if n == 1:
         return [1]
     else:
-        # Concatenamos la lista de los anteriores con el número actual en una lista nueva
         return contar_recursivo(n - 1) + [n]
+        
