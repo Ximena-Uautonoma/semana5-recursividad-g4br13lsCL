@@ -8,14 +8,15 @@ Debe implementar:
 """
 
 def suma_ciclo(n):
-    """
-    Retorna la suma de los primeros n números usando un ciclo.
-    """
-    pass
-
+resultado = 0
+    for i in range(1, n + 1):
+        resultado = resultado + i
+    return resultado
 
 def suma_recursiva(n):
-    """
-    Retorna la suma de los primeros n números usando recursividad.
-    """
-    pass
+if n <= 0:
+        return 0
+    if n == 1:
+        return 1
+    else:
+        return n + suma_recursiva(n - 1)
